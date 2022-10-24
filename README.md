@@ -40,7 +40,7 @@ $ make apply
 $ make output
 ```
 
-#### Or simply run all steps in one:
+#### Or simply run all above steps:
 ```
 $ make all
 ```
