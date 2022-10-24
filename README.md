@@ -77,9 +77,10 @@ tmpfs            3.9G     0  3.9G   0% /sys/fs/cgroup
 tmpfs            781M     0  781M   0% /run/user/1000
 ```
 
-## 4. Terminate the EC2 and delete the security-group
+## 5. Terminate the EC2 and delete the security-group
 ```
 $ make destroy
 ```
 
-
+## 6. Reuse the EC module file 
+If more packages are required to be pre-installed, please modify the [EC2 module file](./modules/ec2_instance/main.tf), and create a new instance by running `$ make all`.
