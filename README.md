@@ -20,7 +20,7 @@ $ export AWS_SECRET_ACCESS_KEY=
 ```
 
 ## 3. Create a new EC2 under the current root account
-With the default configuration in [variables.tf](./variables.tf), it will create a "c6id.xlarge" Ubuntu 20 instance with 4-core cpu, 8-GB ram and 237-GB nvme-ssd, and pre-install the reqired packges and tools. 
+With the default configuration in [variables.tf](./variables.tf), it will create a Ubuntu 20 instance with 4-core cpu, 8-GB ram and 237-GB nvme-ssd (instance type: `c6id.xlarge`, about $0.2016/hr), and install the required packages and tools. 
 #### Validation, Plan, and Review
 ```
 $ make init
@@ -40,7 +40,7 @@ $ make apply
 $ make output
 ```
 
-#### Or run all steps in one:
+#### Or simply run all steps in one:
 ```
 $ make all
 ```
@@ -50,10 +50,10 @@ $ make all
 * Choose Region -> __US West(Oregon) us-west-2__
 * In the navigation pane, choose Instances.
 * Select the instance (__demo-eblast-workshop__) and choose Connect.
-* Choose EC2 Instance Connect (the default username is ubuntu).
+* Choose EC2 Instance Connect (use the default username: `ubuntu`).
 
 
-After login, you can find the reqired tools and scripts at `/home/ubuntu/tools` and `/home/ubuntu/scripts`. The root volume size is 200GB and there is a NVME-SSD (217GB) mounted on `/home/ubuntu/nvme_ssd`
+After login, you can find the required tools and scripts at `/home/ubuntu/tools` and `/home/ubuntu/scripts`. The root volume size is 200GB and the NVME-SSD (217GB) is mounted on `/home/ubuntu/nvme_ssd`
 
 ```
 ubuntu@ip-172-31-49-23:~$ ls
@@ -79,7 +79,7 @@ tmpfs            781M     0  781M   0% /run/user/1000
 
 ## 4. Terminate the EC2 and delete the security-group
 ```
-$ make destro
+$ make destroy
 ```
 
 
