@@ -53,7 +53,7 @@ $ make all
 * Choose EC2 Instance Connect (use the default username: `ubuntu`).
 
 
-After login, you can find the required tools and scripts at `/home/ubuntu/tools` and `/home/ubuntu/scripts`. The root volume size is 200GB and the NVME-SSD (217GB) is mounted on `/home/ubuntu/nvme_ssd`
+After login, you can find the required tools and scripts at `/home/ubuntu/tools` and `/home/ubuntu/scripts`. The root volume size is 194GB and the NVME-SSD (217GB) is mounted on `/home/ubuntu/nvme_ssd`
 
 ```
 ubuntu@ip-172-31-49-23:~$ ls
