@@ -1,4 +1,4 @@
-# jgi-user-meeting-aws-accounts
+# jgi-user-meeting-aws-ec2
 Using terraform to create an AWS EC2 instance
 * JGI Required EC2 instance
   * SRAtoolkit, awscli, python3.10-venv, numpy, ncbi-blast+, and elastic-blast (v0.2.6)
