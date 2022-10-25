@@ -82,5 +82,5 @@ tmpfs            781M     0  781M   0% /run/user/1000
 $ make destroy
 ```
 
-## 6. Reuse the EC module file 
+## 6. Reuse the EC2 module file 
 If more packages are required to be pre-installed, please modify the [EC2 module file](./modules/ec2_instance/main.tf), and create a new instance by running `$ make all`.
