@@ -101,7 +101,7 @@ echo "export PATH=$PATH:/home/ubuntu/tools/sratoolkit.3.0.0-ubuntu64/bin" >> /ho
 python3 -m venv .elb-venv
 source .elb-venv/bin/activate
 pip install wheel
-pip install elastic-blast==0.2.7
+pip install elastic-blast
 cd /home/ubuntu
 mkdir tools && cd tools
 wget --output-document sratoolkit.tar.gz http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
