@@ -75,7 +75,9 @@ sudo apt update
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 ## #sudo apt install -y python3.8 python3.8-venv python3-distutils awscli parallel ncbi-blast+
-sudo apt install -y python3.10 python3.10-venv python3-distutils awscli parallel ncbi-blast+
+## sudo apt install -y python3.10 python3.10-venv python3-distutils awscli parallel ncbi-blast+
+## APT cannot install ncbi-blast+ the latest version 2.14.0
+sudo apt install -y python3.10 python3.10-venv python3-distutils awscli parallel alien
 sudo update-alternatives --install /usr/bin/python3 python /usr/bin/python3.10 1
 cd /home/ubuntu
 git clone https://github.com/lbnl-science-it/jgi-aws-ami.git
@@ -104,6 +106,9 @@ pip install wheel
 pip install elastic-blast
 cd /home/ubuntu
 mkdir tools && cd tools
+## Install the latest Blast+ v2.14.0 from source
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.14.0+-2.x86_64.rpm
+sudo alien -i ncbi-blast-2.14.0+-2.x86_64.rpm
 wget --output-document sratoolkit.tar.gz http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
 tar xvf sratoolkit.tar.gz
 curl -o mastiff -L https://github.com/sourmash-bio/mastiff/releases/latest/download/mastiff-client-x86_64-unknown-linux-musl
