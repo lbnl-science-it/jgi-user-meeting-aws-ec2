@@ -53,7 +53,7 @@ $ make all
 ```
 
 ## 4. EC2 login
-* Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+* Open the EC2 Dashboard from AWS Management Console: Services -> Compute -> EC2
   * ![img](png/02_ec2_service.png)
 * Choose Region -> __US West(Oregon) us-west-2__
   * ![img](png/01_ec2_region.png)
