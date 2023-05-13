@@ -124,7 +124,12 @@ cd /home/ubuntu
 mkdir .ncbi && cd .ncbi
 cp /home/ubuntu/jgi-aws-ami/user-settings.mkfg ./
 rm -rf /home/ubuntu/jgi-aws-ami
-sudo chown -R ubuntu:ubuntu /home/ubuntu 
+sudo chown -R ubuntu:ubuntu /home/ubuntu
+## Install MiniConda and Samtools
+sudo -u ubuntu wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /home/ubuntu/tools/Miniconda3-latest-Linux-x86_64.sh
+sudo -u ubuntu bash /home/ubuntu/tools/Miniconda3-latest-Linux-x86_64.sh -b
+sudo -u ubuntu /home/ubuntu/miniconda3/bin/conda install -y -c bioconda samtools
+sudo chown -R ubuntu:ubuntu /home/ubuntu
 EOF
 }
 
