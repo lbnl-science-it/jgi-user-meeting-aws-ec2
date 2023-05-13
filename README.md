@@ -1,10 +1,13 @@
 # jgi-user-meeting-aws-ec2
+[BioIT hackathon](https://www.bio-itworldexpo.com/fair-data-hackathon) (JGI-NCBI) in Boston on May 15-16, 2023
+ * https://github.com/ncbi/PSSS-Bytes2Biology/wiki/Workflow
+
 JGI-NCBI Workshop - September 1, 2022
  * https://hackmd.io/PZ_rCS6bS8S8yD0UnK79Ww 
 
 Using terraform to create an AWS EC2 instance
 * JGI Required EC2 instance
-  * SRAtoolkit, awscli, python3.10-venv, numpy, ncbi-blast+, and elastic-blast
+  * SRAtoolkit, awscli, python3.10-venv, numpy, samtools, ncbi-blast+, and elastic-blast 
 
 ## 1. Install Terraform (1.2.0+ required):
 ### Mac OS X
@@ -50,10 +53,16 @@ $ make all
 
 ## 4. EC2 login
 * Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+  * ![img](png/02_ec2_service.png)
 * Choose Region -> __US West(Oregon) us-west-2__
+  * ![img](png/01_ec2_region.png)
 * In the navigation pane, choose Instances.
+  * ![img](png/03_ec2_instance.png)
 * Select the instance (__demo-eblast-workshop__) and choose Connect.
+  * ![img](png/04_ec2_instance_id.png)
+  * ![img](png/05_ec2_detail_connect.png)
 * Choose EC2 Instance Connect (use the default username: `ubuntu`).
+  * ![img](png/06_ec2_connect.png)
 
 
 After login, you can find the required tools and scripts at `/home/ubuntu/tools` and `/home/ubuntu/scripts`. The root volume size is 194GB and the NVME-SSD (217GB) is mounted on `/home/ubuntu/nvme_ssd`
