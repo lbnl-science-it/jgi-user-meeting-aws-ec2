@@ -3,7 +3,7 @@
 ### [BioIT Hackathon](https://www.bio-itworldexpo.com/fair-data-hackathon) (JGI-NCBI) in Boston - May 15-16, 2023
  * https://github.com/ncbi/PSSS-Bytes2Biology/wiki/Workflow
 
-### [JGI-NCBI Workshop](https://usermeeting.jgi.doe.gov/workshops/) in Berkeley - September 1, 2022
+### [JGI-NCBI Workshop](https://usermeeting.jgi.doe.gov/past-meetings/2022-agenda/2022-meeting/) in Berkeley - September 1, 2022
  * https://hackmd.io/PZ_rCS6bS8S8yD0UnK79Ww 
 
 ### Pre-installed packages
