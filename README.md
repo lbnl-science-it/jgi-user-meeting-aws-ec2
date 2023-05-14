@@ -1,12 +1,12 @@
 # jgi-user-meeting-aws-ec2
-Using terraform to create an AWS EC2 instance with preinstalled packages for:
-## [BioIT Hackathon](https://www.bio-itworldexpo.com/fair-data-hackathon) (JGI-NCBI) in Boston - May 15-16, 2023
+## Using terraform to create an AWS EC2 instance with preinstalled packages for:
+### [BioIT Hackathon](https://www.bio-itworldexpo.com/fair-data-hackathon) (JGI-NCBI) in Boston - May 15-16, 2023
  * https://github.com/ncbi/PSSS-Bytes2Biology/wiki/Workflow
 
-## [JGI-NCBI Workshop](https://usermeeting.jgi.doe.gov/workshops/) in Berkeley - September 1, 2022
+### [JGI-NCBI Workshop](https://usermeeting.jgi.doe.gov/workshops/) in Berkeley - September 1, 2022
  * https://hackmd.io/PZ_rCS6bS8S8yD0UnK79Ww 
 
-## Pre-installed packages
+### Pre-installed packages
   * SRAtoolkit, awscli, python3.10-venv, numpy, samtools, ncbi-blast+, and elastic-blast 
 
 ## 1. Install Terraform (1.2.0+ required):
